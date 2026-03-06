@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Acceso | WOLFPACK</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">W</span>
+        <span class="brand__text"><strong>WOLFPACK</strong><small>OSINT & HACKING</small></span>
+      </a>
+      <div class="header__cta">
+        <a class="btn btn--ghost" href="index.html">Volver</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container" style="max-width:720px">
+      <div class="section__head">
+        <h1>Acceso</h1>
+        <p class="muted">Regístrate o inicia sesión para acceder al panel.</p>
+      </div>
+
+      <div class="grid" style="grid-template-columns:1fr 1fr">
+        <form class="card form" id="registerForm">
+          <h2 style="margin:0 0 10px">Registro</h2>
+
+          <div class="field">
+            <label for="regName">Nombre</label>
+            <input id="regName" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="regEmail">Email</label>
+            <input id="regEmail" type="email" required />
+          </div>
+
+          <div class="field">
+            <label for="regPass">Contraseña</label>
+            <input id="regPass" type="password" minlength="6" required />
+            <small class="muted">Mínimo 6 caracteres.</small>
+          </div>
+
+          <button class="btn" type="submit">Crear cuenta</button>
+          <p class="muted tiny" id="regMsg"></p>
+        </form>
+
+        <form class="card form" id="loginForm">
+          <h2 style="margin:0 0 10px">Iniciar sesión</h2>
+
+          <div class="field">
+            <label for="logEmail">Email</label>
+            <input id="logEmail" type="email" required />
+          </div>
+
+          <div class="field">
+            <label for="logPass">Contraseña</label>
+            <input id="logPass" type="password" required />
+          </div>
+
+          <button class="btn" type="submit">Entrar</button>
+          <button class="btn btn--ghost" type="button" id="resetBtn">Olvidé mi contraseña</button>
+          <p class="muted tiny" id="logMsg"></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="auth.js"></script>
+</body>
+</html>

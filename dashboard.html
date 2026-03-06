@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Panel | WOLFPACK</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">W</span>
+        <span class="brand__text"><strong>WOLFPACK</strong><small>OSINT & HACKING</small></span>
+      </a>
+      <div class="header__cta">
+        <button class="btn btn--ghost" id="logoutBtn" type="button">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container" style="max-width:900px">
+      <div class="section__head">
+        <h1>Panel</h1>
+        <p class="muted">Solo visible si estás logueado.</p>
+      </div>
+
+      <div class="card">
+        <h2 style="margin-top:0">Tu cuenta</h2>
+        <p class="muted" id="userInfo">Cargando…</p>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h2 style="margin-top:0">Zona privada</h2>
+        <p class="muted">Aquí luego podremos poner: “Mis casos”, “Subir documentación”, “Estado del tracking”, etc.</p>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="auth.js"></script>
+</body>
+</html>

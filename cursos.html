@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cursos | WOLFPACK</title>
+  <meta name="description" content="Cursos y formación de WOLFPACK." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Volver al inicio">
+        <span class="brand__mark">W</span>
+        <span class="brand__text">
+          <strong>WOLFPACK</strong>
+          <small>OSINT & HACKING</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleLines" aria-hidden="true"></span>
+          <span class="srOnly">Abrir menú</span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a class="isActive" href="cursos.html">Cursos</a></li>
+          <li><a href="login.html">Acceso</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__cta">
+        <a class="btn btn--ghost" href="index.html#abrir-caso">Abrir caso</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section__head">
+        <h1>Cursos</h1>
+        <p class="muted">Aquí verás la formación disponible. Pulsa para consultar por WhatsApp.</p>
+      </div>
+
+      <div class="grid cards">
+        <article class="card">
+          <h3>Curso 1</h3>
+          <p class="muted">Descripción del curso.</p>
+          <a class="btn btn--secondary"
+             href="https://tinyurl.com/artiscode-redes1"
+             target="_blank"
+             rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </article>
+
+        <article class="card">
+          <h3>Curso 2</h3>
+          <p class="muted">Descripción del curso.</p>
+          <a class="btn btn--secondary"
+             href="https://tinyurl.com/artiscode-redes1"
+             target="_blank"
+             rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </article>
+
+        <article class="card">
+          <h3>Curso 3</h3>
+          <p class="muted">Descripción del curso.</p>
+          <a class="btn btn--secondary"
+             href="https://tinyurl.com/artiscode-redes1"
+             target="_blank"
+             rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </article>
+
+        <article class="card">
+          <h3>Curso 4</h3>
+          <p class="muted">Descripción del curso.</p>
+          <a class="btn btn--secondary"
+             href="https://tinyurl.com/artiscode-redes1"
+             target="_blank"
+             rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© <span id="year"></span> WOLFPACK</p>
+      <div class="footer__links">
+        <a href="index.html">Inicio</a>
+        <a href="login.html">Acceso</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
