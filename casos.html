@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abrir caso | WOLFPACK</title>
+  <meta name="description" content="Envía tu caso para análisis OSINT." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div style="background:#111; color:#fff; text-align:center; padding:10px; font-size:14px;">
+    🚀 Plataforma en evolución constante. Nuevas funcionalidades y contenidos se incorporan progresivamente.
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo-wolfpack.png" alt="WOLFPACK" class="brand__logo" />
+        <span class="brand__text">
+          <strong>WOLFPACK</strong>
+          <small>OSINT & HACKING</small>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="externos.html">Cursos externos</a></li>
+          <li><a href="login.html">Acceso</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__cta">
+        <a class="btn btn--ghost" href="casos.html">Abrir caso</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__copy" style="max-width:800px;">
+          <p class="badge">Apertura de caso</p>
+          <h1>Cuéntanos tu caso</h1>
+          <p class="lead">
+            Describe tu situación y te daremos una primera orientación.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="max-width:900px;">
+        
+        <form class="card form"
+              action="https://formspree.io/f/mojkroyk"
+              method="POST">
+
+          <div class="grid" style="grid-template-columns:1fr 1fr; gap:16px;">
+            <div class="field">
+              <label>Nombre</label>
+              <input type="text" name="nombre" required />
+            </div>
+
+            <div class="field">
+              <label>Apellidos</label>
+              <input type="text" name="apellidos" required />
+            </div>
+
+            <div class="field">
+              <label>Email</label>
+              <input type="email" name="email" required />
+            </div>
+
+            <div class="field">
+              <label>Teléfono</label>
+              <input type="text" name="telefono" />
+            </div>
+          </div>
+
+          <div class="field" style="margin-top:16px;">
+            <label>País</label>
+            <input type="text" name="pais" />
+          </div>
+
+          <div class="field" style="margin-top:16px;">
+            <label>Describe tu caso</label>
+            <textarea name="caso" rows="6" required></textarea>
+          </div>
+
+          <!-- extras -->
+          <input type="hidden" name="_subject" value="Nuevo caso WOLFPACK" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://wolfpackcasososinthacking-oss.github.io/wolfpack-web2/gracias.html" />
+
+          <button class="btn" type="submit" style="margin-top:20px;">
+            Enviar caso
+          </button>
+
+          <p class="muted" style="margin-top:10px;">
+        🔒 Tratamos tu información con total confidencialidad.
+           No compartimos datos con terceros.
+         </p>
+
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© <span id="year"></span> WOLFPACK</p>
+      <div class="footer__links">
+        <a href="index.html">Inicio</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="externos.html">Cursos externos</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
