@@ -11,59 +11,38 @@
 <body>
 
   <div style="background:#111; color:#fff; text-align:center; padding:10px; font-size:14px;">
-🚀 Plataforma en evolución constante. Nuevas funcionalidades y contenidos se incorporan progresivamente.
-</div>
+    🚀 Plataforma en evolución constante. Nuevas funcionalidades y contenidos se incorporan progresivamente.
+  </div>
 
+  <!-- HEADER LIMPIO -->
   <header class="header">
     <div class="container header__inner">
-      <a class="brand" href="index.html" aria-label="Ir al inicio">
-        <img src="assets/img/logo-wolfpack.png" alt="WOLFPACK OSINT & HACKING" class="brand__logo"/>
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo-wolfpack.png" class="brand__logo"/>
         <span class="brand__text">
           <strong>WOLFPACK</strong>
           <small>OSINT & HACKING</small>
         </span>
       </a>
 
-      <nav class="nav" aria-label="Navegación principal">
-        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
-          <span class="nav__toggleLines" aria-hidden="true"></span>
-          <span class="srOnly">Abrir menú</span>
-
-          <ul class="nav__menu" id="navMenu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="index.html#servicios">Servicios</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="externos.html">Cursos externos</a></li>
-        <li><a href="login.html">Acceso</a></li>
-        <li><a href="index.html#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-
-    <div class="header__cta">
-      <a class="btn btn--ghost" href="index.html">Inicio</a>
-      <button class="btn btn--ghost" type="button" onclick="history.back()">Atrás</button>
-      <a class="btn btn--ghost" href="casos.html">Abrir caso</a>
-    </div>
-  </div>
-</header>
-        </button>
-
-        <ul class="nav__menu" id="navMenu">
+      <nav class="nav">
+        <ul class="nav__menu">
           <li><a class="isActive" href="index.html">Inicio</a></li>
-          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="#servicios">Servicios</a></li>
           <li><a href="cursos.html">Cursos</a></li>
           <li><a href="externos.html">Cursos externos</a></li>
           <li><a href="login.html">Acceso</a></li>
-          <li><a href="index.html#contacto">Contacto</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
 
       <div class="header__cta">
-        <a class="btn btn--ghost" href="index.html#abrir-caso">Abrir caso</a>
+        <a class="btn btn--ghost" href="casos.html">Abrir caso</a>
       </div>
     </div>
   </header>
 
+  <!-- MAIN -->
   <main>
     <section class="hero">
       <div class="container hero__grid">
@@ -72,35 +51,13 @@
           <h1>Web profesional con blog y sección de cursos</h1>
           <p class="lead">
             Presenta tus servicios, publica contenido útil y recibe consultas.
-            Además, puedes promocionar cursos de terceros de forma clara y profesional.
           </p>
 
           <div class="hero__actions">
-            <a class="btn" href="index.html#servicios">Ver servicios</a>
+            <a class="btn" href="casos.html">Abrir caso</a>
+            <a class="btn btn--secondary" href="#servicios">Ver servicios</a>
             <a class="btn btn--secondary" href="cursos.html">Ver cursos</a>
-            <a class="btn btn--secondary" href="externos.html">Cursos Externos</a>
-            <a class="btn btn--secondary"
-               href="https://tinyurl.com/artiscode-redes1"
-               target="_blank"
-               rel="noopener noreferrer">WhatsApp</a>
-          </div>
-        </div>
-
-        <div class="hero__card">
-          <div class="card card--glow">
-            <h2>Panel rápido</h2>
-            <p class="muted">Objetivo</p>
-            <p><strong>Web clara + profesional + conversión</strong></p>
-
-            <hr class="sep" />
-
-            <p class="muted">Blog</p>
-            <p><strong>Guías OSINT, verificación y geolocalización</strong></p>
-
-            <hr class="sep" />
-
-            <p class="muted">Cursos</p>
-            <p><strong>Formación externa mediante academia colaboradora</strong></p>
+            <a class="btn btn--secondary" href="externos.html">Cursos externos</a>
           </div>
         </div>
       </div>
@@ -108,75 +65,46 @@
 
     <section class="section" id="servicios">
       <div class="container">
-        <div class="section__head">
-          <h2>Servicios</h2>
-          <p class="muted">Explica tus servicios de forma simple y clara.</p>
-        </div>
+        <h2>Servicios</h2>
 
         <div class="grid cards">
-          <article class="card">
+          <div class="card">
             <h3>Investigación OSINT</h3>
-            <p class="muted">Recopilación y verificación de información de fuentes abiertas.</p>
-          </article>
-          <article class="card">
+          </div>
+
+          <div class="card">
             <h3>SOCMINT</h3>
-            <p class="muted">Señales sociales, patrones y conexiones.</p>
-          </article>
-          <article class="card">
+          </div>
+
+          <div class="card">
             <h3>Verificación</h3>
-            <p class="muted">Contraste de identidad y coherencia digital.</p>
-          </article>
-          <article class="card">
+          </div>
+
+          <div class="card">
             <h3>Reportes</h3>
-            <p class="muted">Entrega profesional en PDF / PPT.</p>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" id="contacto">
+    <section class="section" id="contacto">
       <div class="container">
-        <div class="section__head">
-          <h2>Contacto</h2>
-          <p class="muted">Añade aquí tus redes y formas de contacto.</p>
-        </div>
+        <h2>Contacto</h2>
 
-        <div class="grid contactGrid">
-          <div class="card">
-            <h3>Email</h3>
-            <p class="muted">
-              <a href="mailto:wolfpackcasososinthacking@gmail.com">wolfpackcasososinthacking@gmail.com</a>
-            </p>
-          </div>
+        <a href="mailto:wolfpackcasososinthacking@gmail.com">
+          wolfpackcasososinthacking@gmail.com
+        </a>
 
-          <div class="card">
-            <h3>WhatsApp</h3>
-            <a class="btn btn--secondary"
-               href="https://tinyurl.com/artiscode-redes1"
-               target="_blank"
-               rel="noopener noreferrer">Abrir WhatsApp</a>
-          </div>
-
-          <div class="card">
-            <h3>Redes</h3>
-            <p class="muted">Instagram / TikTok / YouTube</p>
-          </div>
-        </div>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__inner">
-      <p class="muted">© <span id="year"></span> WOLFPACK</p>
-      <div class="footer__links">
-        <a href="cursos.html">Cursos</a>
-        <a href="externos.html">Cursos Externos</a>
-        <a href="login.html">Acceso</a>
-      </div>
+      <p>© WOLFPACK</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
