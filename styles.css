@@ -59,3 +59,77 @@ a{color:inherit}
   .cards{grid-template-columns:1fr}
   .nav__menu{flex-wrap:wrap}
 }
+.nav__toggle{
+  display:none;
+  background:transparent;
+  border:1px solid var(--border);
+  color:var(--text);
+  padding:10px 12px;
+  border-radius:12px;
+  cursor:pointer;
+}
+
+.nav__toggleLines{
+  display:block;
+  width:18px;
+  height:2px;
+  background:currentColor;
+  position:relative;
+}
+
+.nav__toggleLines::before,
+.nav__toggleLines::after{
+  content:"";
+  position:absolute;
+  left:0;
+  width:18px;
+  height:2px;
+  background:currentColor;
+}
+
+.nav__toggleLines::before{ top:-6px; }
+.nav__toggleLines::after{ top:6px; }
+
+.srOnly{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+
+@media (max-width: 900px){
+  .nav__toggle{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .nav__menu{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    gap:8px;
+    margin-top:12px;
+  }
+
+  .nav__menu.nav__menu--open{
+    display:flex;
+  }
+
+  .header__inner{
+    height:auto;
+    padding:14px 0;
+    align-items:flex-start;
+    flex-wrap:wrap;
+  }
+
+  .header__cta{
+    width:100%;
+    margin-top:10px;
+  }
+}
